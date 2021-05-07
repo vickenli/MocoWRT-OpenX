@@ -1,4 +1,5 @@
 # WikiHackers OpenX-Mini
+## Join Telegram: https://t.me/wikimao
 
 Actions-OpenWrt
 ======================

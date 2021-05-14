@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build HiWiFi B70 OpenWrt
+name: Build X86 FULL OpenWrt
 
 on:
   repository_dispatch:

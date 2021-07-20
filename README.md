@@ -3,6 +3,8 @@
 
 Actions-OpenWrt
 ======================
+Default Gateway: 192.168.2.1
+Default Password: password
 
 Supported device platforms and firmware download addresses
 -------------

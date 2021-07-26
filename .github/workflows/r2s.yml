@@ -14,6 +14,8 @@ on:
   repository_dispatch:
     types: [R2S]
   workflow_dispatch:
+  schedule:
+    - cron: 0 8 * * *
 
 #  watch:
 #    types: started

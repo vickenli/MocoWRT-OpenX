@@ -14,6 +14,8 @@ on:
   repository_dispatch:
     types: [NEO2]
   workflow_dispatch:
+  schedule:
+    - cron: 0 4 * * *
 
 #  watch:
 #    types: started

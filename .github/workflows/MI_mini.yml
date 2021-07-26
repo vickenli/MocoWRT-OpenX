@@ -14,6 +14,8 @@ on:
   repository_dispatch:
     types: [MiMini]
   workflow_dispatch:
+  schedule:
+    - cron: 0 3 * * *
 
 #  watch:
 #    types: started

@@ -14,6 +14,8 @@ on:
   repository_dispatch:
     types: [PI3]
   workflow_dispatch:
+  schedule:
+    - cron: 0 11 * * *
 
 #  watch:
 #    types: started

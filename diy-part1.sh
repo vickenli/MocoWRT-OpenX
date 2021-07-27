@@ -16,7 +16,19 @@
 # Add a feed source
 git clone https://github.com/chenhw2/openwrt-v2ray-plugin.git package/v2ray-plugin
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-# git clone https://github.com/fw876/helloworld.git package/openwrt-helloworld
+#git clone https://github.com/fw876/helloworld.git package/openwrt-helloworld
 #git clone https://github.com/MrH723/openwrt-packages.git package/openwrt-packages
 sed -i '$a src-git WikiHacker https://github.com/WikiHacker/openwrt-packages' feeds.conf.default
+# Add a feed source
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+#
+#Adding More Packages
+pushd package/lean
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
+popd
+
 

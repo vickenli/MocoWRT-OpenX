@@ -74,7 +74,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
     - name: UpdateLib
       run: |
-       cd openwrt/packages/lean
+       cd openwrt/package/lean
        rm -rf libcryptopp
        svn co https://github.com/immortalwrt/packages/trunk/libs/libcryptopp
 

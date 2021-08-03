@@ -24,11 +24,8 @@ sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.de
 #
 #Adding More Packages
 pushd package/lean
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng
+rm -rf libcryptopp
+svn co https://github.com/WikiHacker/packages/trunk/libs/libcryptopp
 popd
 
 

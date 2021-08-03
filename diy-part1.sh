@@ -23,9 +23,5 @@ sed -i '$a src-git WikiHacker https://github.com/WikiHacker/openwrt-packages' fe
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #
 #Adding More Packages
-pushd package/lean
-rm -rf libcryptopp
-svn co https://github.com/WikiHacker/packages/trunk/libs/libcryptopp
-popd
 
 

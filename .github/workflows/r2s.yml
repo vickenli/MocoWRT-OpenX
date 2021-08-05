@@ -67,16 +67,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-    - name: remove libcryptopp
-      run: |
-        cd openwrt/package/lean
-        rm -rf libcryptopp
-        ls
-    - name: download libcryptopp
-      run: |
-        cd openwrt/package/lean
-        svn co https://github.com/WikiHacker/packages/trunk/libs/libcryptopp
-        ls
+
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
